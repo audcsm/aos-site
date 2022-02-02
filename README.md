@@ -1,2 +1,1 @@
-# aos-site
-Website remodel for Advanced Obesity Surgery
+# Advanced Obesity Surgery website remodel
