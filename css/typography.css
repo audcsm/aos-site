@@ -1,0 +1,15 @@
+.over-image {
+    color: white;
+    font-weight: bold;
+}
+
+/* BUTTONS */
+.btn {
+    font-weight: bold;
+}
+.btn:hover {
+    color: white;
+}
+.btn.large {
+    font-size: 2rem;
+}

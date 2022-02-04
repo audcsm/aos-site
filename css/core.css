@@ -1,0 +1,18 @@
+.over-image {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* BUTTONS */
+.btn {
+    background-color: lightslategray;
+    border-radius: 10px;
+    border: none;
+}
+.btn:hover {
+    background-color: black;
+}
+.btn.large {
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+}
