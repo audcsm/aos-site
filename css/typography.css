@@ -19,6 +19,17 @@ blockquote {
     font-style: italic;
     margin-bottom: 0;
 }
+#feature-text blockquote {
+    margin-left: 30px;
+}
+#feature-text blockquote:before {
+    content: '“';
+    position: absolute;
+    font-size: 50px;
+    display: block;
+    margin-left: -30px;
+    margin-top: -8px;
+}
 
 /* BUTTONS */
 .btn {

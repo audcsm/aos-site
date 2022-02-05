@@ -5,10 +5,6 @@
 .over-image img {
     margin-bottom: 20px;
 }
-.feature-section {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
 #feature-text {
     padding: 0 70px;
 }
@@ -55,12 +51,11 @@
     transition: margin 0.15s ease-in-out;
 }
 .btn:hover i {
-    margin-left: 10px;
-    margin-right: -10px;
+    margin-left: 5px;
+    margin-right: -5px;
     transition: margin 0.15s ease-in-out;
 }
 .btn.large {
     border-radius: 20px;
     padding: 0.5rem 1.5rem;
-    box-shadow: 5px 5px 20px black;
 }

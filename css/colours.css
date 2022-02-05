@@ -4,20 +4,17 @@ body {
 .over-image {
     color: white;
 }
-.feature-section {
+#pointer-left {
     background-color: lightseagreen;
 }
-#pointer-left {
-    background-color: lightgray;
-}
 #pointer-left:before {
-    border-left: 50px solid lightgray;
+    border-left: 50px solid lightseagreen;
 }
 #pointer-right {
-    background-color: lightgray;
+    background-color: lightseagreen;
 }
 #pointer-right:before {
-    border-right: 50px solid lightgray;
+    border-right: 50px solid lightseagreen;
 }
 
 /* BUTTONS */
@@ -26,6 +23,5 @@ body {
     color: black;
 }
 .btn:hover {
-    background-color: darkslategray;
-    color: white;
+    background-color: white;
 }
