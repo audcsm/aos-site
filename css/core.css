@@ -1,18 +1,66 @@
-.over-image {
-    padding-top: 40px;
-    padding-bottom: 40px;
+.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.over-image img {
+    margin-bottom: 20px;
+}
+.feature-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#feature-text {
+    padding: 0 70px;
+}
+#pointer-left {
+    height: 100px;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#pointer-left:before {
+    content: "";
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+#pointer-right {
+    height: 100px;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#pointer-right:before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
 }
 
 /* BUTTONS */
 .btn {
-    background-color: lightslategray;
     border-radius: 10px;
     border: none;
+    margin: 10px 0;
 }
-.btn:hover {
-    background-color: black;
+.btn i {
+    transition: margin 0.15s ease-in-out;
+}
+.btn:hover i {
+    margin-left: 10px;
+    margin-right: -10px;
+    transition: margin 0.15s ease-in-out;
 }
 .btn.large {
     border-radius: 20px;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 5px 5px 20px black;
 }

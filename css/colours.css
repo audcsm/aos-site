@@ -1,0 +1,31 @@
+body {
+    color: black;
+}
+.over-image {
+    color: white;
+}
+.feature-section {
+    background-color: lightseagreen;
+}
+#pointer-left {
+    background-color: lightgray;
+}
+#pointer-left:before {
+    border-left: 50px solid lightgray;
+}
+#pointer-right {
+    background-color: lightgray;
+}
+#pointer-right:before {
+    border-right: 50px solid lightgray;
+}
+
+/* BUTTONS */
+.btn {
+    background-color: lightseagreen;
+    color: black;
+}
+.btn:hover {
+    background-color: darkslategray;
+    color: white;
+}

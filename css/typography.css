@@ -1,14 +1,28 @@
-.over-image {
-    color: white;
+* {
+    font-family: "Didot", serif;
+}
+h1 {
     font-weight: bold;
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 2.25rem;
+}
+h1, h2, h3, h4 {
+    margin-bottom: 20px;
+}
+.over-image {
+    font-weight: bold;
+}
+blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 0;
 }
 
 /* BUTTONS */
 .btn {
     font-weight: bold;
-}
-.btn:hover {
-    color: white;
 }
 .btn.large {
     font-size: 2rem;
