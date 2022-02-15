@@ -1,20 +1,32 @@
 .container {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-.over-image img {
-    margin-bottom: 20px;
+#banner-img {
+    position: relative;
+}
+.over-banner {
+    z-index: 2;
+    position: relative;
+}
+.banner-overlay_teal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 #feature-text {
     padding: 0 70px;
 }
-#pointer-left {
+#pointer_left {
     height: 100px;
     position: relative;
     margin-top: auto;
     margin-bottom: auto;
 }
-#pointer-left:before {
+#pointer_left:before {
     content: "";
     position: absolute;
     right: -50px;
@@ -24,13 +36,13 @@
     border-top: 50px solid transparent;
     border-bottom: 50px solid transparent;
 }
-#pointer-right {
+#pointer_right {
     height: 100px;
     position: relative;
     margin-top: auto;
     margin-bottom: auto;
 }
-#pointer-right:before {
+#pointer_right:before {
     content: "";
     position: absolute;
     left: -50px;
@@ -43,7 +55,11 @@
 
 /* BUTTONS */
 .btn {
-    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0;
+    padding: 0.5rem 1.5rem;
     border: none;
     margin: 10px 0;
 }
@@ -56,6 +72,10 @@
     transition: margin 0.15s ease-in-out;
 }
 .btn.large {
-    border-radius: 20px;
-    padding: 0.5rem 1.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

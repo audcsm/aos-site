@@ -1,27 +1,30 @@
 body {
     color: black;
 }
-.over-image {
+.over-banner {
     color: white;
 }
-#pointer-left {
-    background-color: lightseagreen;
+.banner-overlay_teal {
+    background: rgba(31,20,93,.5);
 }
-#pointer-left:before {
-    border-left: 50px solid lightseagreen;
+#pointer_left {
+    background-color: rgb(146,208,80);
 }
-#pointer-right {
-    background-color: lightseagreen;
+#pointer_left:before {
+    border-left: 50px solid rgb(146,208,80);
 }
-#pointer-right:before {
-    border-right: 50px solid lightseagreen;
+#pointer_right {
+    background-color: rgb(146,208,80);
+}
+#pointer_right:before {
+    border-right: 50px solid rgb(146,208,80);
 }
 
 /* BUTTONS */
 .btn {
-    background-color: lightseagreen;
+    background-color: rgb(146,208,80);
     color: black;
 }
 .btn:hover {
-    background-color: white;
+    background-color: black;
 }
