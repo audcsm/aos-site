@@ -54,6 +54,12 @@
     border-top: 75px solid transparent;
     border-bottom: 75px solid transparent;
 }
+.bio-img {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
 /* BUTTONS */
 .btn {
