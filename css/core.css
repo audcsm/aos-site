@@ -9,7 +9,7 @@
     z-index: 2;
     position: relative;
 }
-.banner-overlay_teal {
+.banner-overlay_navy {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -18,10 +18,12 @@
     z-index: 1;
 }
 #feature-text {
-    padding: 0 70px;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
 }
 #pointer_left {
-    height: 100px;
+    height: 150px;
     position: relative;
     margin-top: auto;
     margin-bottom: auto;
@@ -29,15 +31,15 @@
 #pointer_left:before {
     content: "";
     position: absolute;
-    right: -50px;
+    right: -75px;
     bottom: 0;
     width: 0;
     height: 0;
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
 }
 #pointer_right {
-    height: 100px;
+    height: 150px;
     position: relative;
     margin-top: auto;
     margin-bottom: auto;
@@ -45,12 +47,12 @@
 #pointer_right:before {
     content: "";
     position: absolute;
-    left: -50px;
+    left: -75px;
     bottom: 0;
     width: 0;
     height: 0;
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
 }
 
 /* BUTTONS */
