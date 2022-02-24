@@ -11,28 +11,44 @@ h2 {
 h2, h3, h4, h5 {
     margin-bottom: 20px;
 }
+hr {
+    margin: 30px 0;
+}
+blockquote {
+    font-style: italic;
+    margin-left: 20px;
+}
+blockquote:before {
+    content: '“';
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    margin-left: -20px;
+    margin-top: -5px;
+}
+
+
+/* SPECIFIC */
+#feature-text blockquote {
+    margin-left: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+#feature-text blockquote:before {
+    font-size: 50px;
+    margin-left: -30px;
+    margin-top: -8px;
+}
+.patient-review h5 {
+    margin-bottom: 10px;
+}
 .text_right {
     text-align: right;
 }
 .centered {
     text-align: center;
 }
-blockquote {
-    font-size: 1.5rem;
-    font-style: italic;
-    margin-bottom: 0;
-}
-#feature-text blockquote {
-    margin-left: 30px;
-}
-#feature-text blockquote:before {
-    content: '“';
-    position: absolute;
-    font-size: 50px;
-    display: block;
-    margin-left: -30px;
-    margin-top: -8px;
-}
+
 
 /* BUTTONS */
 .btn {

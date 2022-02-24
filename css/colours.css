@@ -1,24 +1,46 @@
 body {
     color: black;
 }
+
+
+/* BANNER */
 .over-banner {
     color: white;
 }
 .banner-overlay_navy {
     background: rgba(32,44,60,.6);
 }
+
+
+/* FEATURE */
 #pointer_left {
     background-color: rgb(32,44,60);
 }
 #pointer_left:before {
     border-left: 75px solid rgb(32,44,60);
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
 }
 #pointer_right {
     background-color: rgb(32,44,60);
 }
 #pointer_right:before {
     border-right: 75px solid rgb(32,44,60);
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
 }
+
+
+/* PAGINATION */
+.page-item a {
+    background-color: rgb(221,161,98);
+    color: black;
+}
+.page-item a:hover {
+    background-color: rgb(32,44,60);
+    color: rgb(255,255,255);
+}
+
 
 /* BUTTONS */
 .btn {

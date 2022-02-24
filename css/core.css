@@ -2,6 +2,9 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+
+/* BANNER */
 #banner-img {
     position: relative;
 }
@@ -17,6 +20,9 @@
     right: 0;
     z-index: 1;
 }
+
+
+/* FEATURE */
 #feature-text {
     padding: 0 100px;
     display: flex;
@@ -35,8 +41,6 @@
     bottom: 0;
     width: 0;
     height: 0;
-    border-top: 75px solid transparent;
-    border-bottom: 75px solid transparent;
 }
 #pointer_right {
     height: 150px;
@@ -51,9 +55,10 @@
     bottom: 0;
     width: 0;
     height: 0;
-    border-top: 75px solid transparent;
-    border-bottom: 75px solid transparent;
 }
+
+
+/* IMAGES */
 .bio-img {
     display: flex;
     justify-content: space-around;
@@ -64,6 +69,37 @@
     max-width: 250px;
     height: auto;
 }
+
+
+/* PAGINATION */
+.pagination {
+    margin: 40px 0;
+    justify-content: center;
+}
+.page-item {
+    border: none;
+}
+.page-item a {
+    border: none;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 0 !important;
+    margin: 0 10px;
+}
+.page-item a i {
+    transition: margin 0.15s ease-in-out;
+}
+.page-item a:hover i {
+    margin-left: 3px;
+    margin-right: -3px;
+    transition: margin 0.15s ease-in-out;
+}
+.page-item a.prev:hover i {
+    margin-left: -3px;
+    margin-right: 3px;
+}
+
 
 /* BUTTONS */
 .btn {
