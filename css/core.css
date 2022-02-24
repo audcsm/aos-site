@@ -60,6 +60,10 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
+.bio-img img {
+    max-width: 250px;
+    height: auto;
+}
 
 /* BUTTONS */
 .btn {
