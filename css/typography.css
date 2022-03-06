@@ -26,6 +26,29 @@ blockquote:before {
     margin-left: -20px;
     margin-top: -5px;
 }
+a, a:hover {
+    transition: 0.15s ease-in-out;
+}
+
+
+/* HEADER */
+.sticky .nav-heading {
+    line-height: 35px;
+}
+.sticky .dropdown li {
+    padding: 8px 10px;
+}
+.nav-heading {
+    cursor: default;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 90px;
+}
+.dropdown li {
+    font-style: italic;
+    cursor: pointer;
+    padding: 10px 20px;
+}
 
 
 /* SPECIFIC */
