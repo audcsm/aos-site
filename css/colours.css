@@ -1,6 +1,24 @@
 body {
     color: black;
 }
+a:hover {
+    color: rgb(128,136,144) !important;
+}
+
+/* HEADER */
+header {
+    background-color: white;
+}
+.sticky .dropdown {
+    border-top: 5px solid rgb(128,136,144);
+}
+.nav-heading {
+    color: black;
+}
+.dropdown {
+    border-top: 8px solid rgb(128,136,144);
+    background: white;
+}
 
 
 /* BANNER */
