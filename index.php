@@ -2,11 +2,11 @@
 
 $PageTitle="Advanced Obesity Surgery";
 
-include_once('/partials/header.php');
+include_once('./partials/header.php');
 
 ?>
 
-<main>
+        <main>
             <div id="banner-img" style="background-image:url(http://placekitten.com/1300/600)">
                 <div class="banner-overlay_navy"></div>
                 <div class="container over-banner">
@@ -49,12 +49,9 @@ include_once('/partials/header.php');
                 <a class="btn large">Start here <i class="bi bi-chevron-double-right"></i></a>
             </div>
         </main>
-        
-    </body>
-</html>
 
 <?php
 
-// include_once('/partials/footer.php');
+include_once('./partials/footer.php');
 
 ?>

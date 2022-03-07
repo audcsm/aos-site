@@ -29,6 +29,10 @@ blockquote:before {
 a, a:hover {
     transition: 0.15s ease-in-out;
 }
+.nav-heading {
+    font-weight: bold;
+    text-decoration: none;
+}
 
 
 /* HEADER */
@@ -38,16 +42,34 @@ a, a:hover {
 .sticky .dropdown li {
     padding: 8px 10px;
 }
-.nav-heading {
+header .nav-heading {
     cursor: default;
-    font-weight: bold;
-    text-decoration: none;
     line-height: 90px;
 }
 .dropdown li {
     font-style: italic;
     cursor: pointer;
     padding: 10px 20px;
+}
+
+
+/* FOOTER */
+footer .nav-heading {
+    line-height: 1;
+    cursor: pointer;
+}
+footer p {
+    margin: 0;
+    font-size: .8em;
+}
+.aos-copy {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.aos-copy h6 {
+    margin: 0;
 }
 
 

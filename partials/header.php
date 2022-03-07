@@ -5,31 +5,16 @@
         <meta charset="UTF-8">
         <meta name ="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" href="../css/bs/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/bs/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="../css/typography.css" />
-        <link rel="stylesheet" href="../css/colours.css" />
-        <link rel="stylesheet" href="../css/header.css" />
-        <link rel="stylesheet" href="../css/footer.css" />
-        <link rel="stylesheet" href="../css/core.css" />
+        <link rel="stylesheet" href="./css/typography.css" />
+        <link rel="stylesheet" href="./css/colours.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
+        <link rel="stylesheet" href="./css/core.css" />
         
-        <script src="../scripts/bs/bootstrap.bundle.min.js"></script>
-        <script src="../scripts/jquery.js"></script>
-        <script src="../scripts/app.js"></script>
-        <script>
-        window.onscroll = function() {stickyHeader()};
-
-        var header = document.getElementById("header");
-        var sticky = header.offsetHeight;
-
-        function stickyHeader() {
-          if (window.pageYOffset >= sticky) {
-            header.classList.add("sticky")
-          } else {
-            header.classList.remove("sticky");
-          }
-        }
-        </script>
+        <script src="./scripts/bs/bootstrap.bundle.min.js"></script>
+        <script src="./scripts/jquery.js"></script>
     </head>
     
     <body>
@@ -58,3 +43,4 @@
                 </ul>
             </div>
         </header>
+        <script src="./scripts/app.js"></script>

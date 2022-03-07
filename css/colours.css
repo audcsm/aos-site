@@ -1,49 +1,64 @@
+:root {
+    --brown: rgb(221,161,98);
+    --navy: rgb(32,44,60);
+    --grey: rgb(128,136,144);
+    --light-grey: rgb(222,219,225);
+    --white: rgb(255,255,255);
+    --black: rgb(0,0,0);
+}
+
 body {
-    color: black;
+    color: var(--black);
 }
 a:hover {
-    color: rgb(128,136,144) !important;
+    color: var(--grey) !important;
 }
 
 /* HEADER */
 header {
-    background-color: white;
+    background-color: var(--light-grey);
 }
 .sticky .dropdown {
-    border-top: 5px solid rgb(128,136,144);
+    border-top: 5px solid var(--grey);
 }
 .nav-heading {
-    color: black;
+    color: var(--black);
 }
 .dropdown {
-    border-top: 8px solid rgb(128,136,144);
-    background: white;
+    border-top: 8px solid var(--grey);
+    background: var(--white);
+}
+
+
+/* FOOTER */
+footer {
+    background-color: var(--light-grey);
 }
 
 
 /* BANNER */
 .over-banner {
-    color: white;
+    color: var(--white);
 }
 .banner-overlay_navy {
-    background: rgba(32,44,60,.6);
+    background: rgba(32,44,60,.7);
 }
 
 
 /* FEATURE */
 #pointer_left {
-    background-color: rgb(32,44,60);
+    background-color: var(--navy);
 }
 #pointer_left:before {
-    border-left: 75px solid rgb(32,44,60);
+    border-left: 75px solid var(--navy);
     border-top: 75px solid transparent;
     border-bottom: 75px solid transparent;
 }
 #pointer_right {
-    background-color: rgb(32,44,60);
+    background-color: var(--navy);
 }
 #pointer_right:before {
-    border-right: 75px solid rgb(32,44,60);
+    border-right: 75px solid var(--navy);
     border-top: 75px solid transparent;
     border-bottom: 75px solid transparent;
 }
@@ -51,21 +66,21 @@ header {
 
 /* PAGINATION */
 .page-item a {
-    background-color: rgb(221,161,98);
-    color: black;
+    background-color: var(--brown);
+    color: var(--black);
 }
 .page-item a:hover {
-    background-color: rgb(32,44,60);
-    color: rgb(255,255,255);
+    background-color: var(--navy);
+    color: var(--white);
 }
 
 
 /* BUTTONS */
 .btn {
-    background-color: rgb(221,161,98);
-    color: black;
+    background-color: var(--brown);
+    color: var(--black);
 }
 .btn:hover {
-    background-color: rgb(32,44,60);
-    color: rgb(255,255,255);
+    background-color: var(--navy);
+    color: var(--white) !important;
 }

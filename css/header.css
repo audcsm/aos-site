@@ -16,17 +16,6 @@ header .container {
     justify-content: space-between;
     position: relative;
 }
-.logo {
-    background-image: url(../images/advhealth.jpg);
-    background-position: center;
-    background-size: contain;
-    height: 90px;
-    width: 235px;
-    padding: 0;
-    margin: 0;
-    justify-self: flex-start;
-    transition: 0.15s linear;
-}
 .sticky {
     position: fixed;
     top: 0;
