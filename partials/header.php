@@ -39,7 +39,7 @@
                             <li><a>Blog</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-heading">Start Here</a></li>
+                    <li class="nav-item"><a class="nav-heading" style="cursor: pointer">Start Here</a></li>
                 </ul>
             </div>
         </header>
