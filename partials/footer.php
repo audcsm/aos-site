@@ -2,7 +2,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-lg-6">
-                        <div class="logo"></div>
+                        <div class="logo" onclick="window.location.href='./index.php'"></div>
                     </div>
                     <div class="col-sm-12 col-lg-6">
                         <ul class="nav">

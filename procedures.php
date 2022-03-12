@@ -20,17 +20,17 @@ include_once('./partials/header.php');
                     <div class="col-sm-12 col-lg-4 centered">
                         <h3><strong>Laparoscopic Duodenal Switch</strong></h3>
                         <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-                        <a class="btn">Read more</a>
+                        <a class="btn" onclick="window.location.href='./ds.php'">Read more</a>
                     </div>
                     <div class="col-sm-12 col-lg-4 centered">
                         <h3><strong>Laparoscopic RNY Gastric Bypass</strong></h3>
                         <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-                        <a class="btn">Read more</a>
+                        <a class="btn" onclick="window.location.href='./gb.php'">Read more</a>
                     </div>
                     <div class="col-sm-12 col-lg-4 centered">
                         <h3><strong>Laparoscopic Sleeve Gastrectomy</strong></h3>
                         <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-                        <a class="btn">Read more</a>
+                        <a class="btn" onclick="window.location.href='./sg.php'">Read more</a>
                     </div>
                 </div>
             </div>

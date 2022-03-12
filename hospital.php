@@ -14,7 +14,6 @@ include_once('./partials/header.php');
                 </div>
             </div>
             <div class="container">
-                <h2>About AdventHealth</h2>
                 <h5>AdventHealth Celebration Hospital is a 172-bed, state-of-the-art hospital that serves as a showcase of innovation and excellence in healthcare. Our reputation for delivering highly efficient, patient-focused and cost effective care allows us to achieve optimum health and wellness for patients with an emphasis on healing the whole person - mind, body and spirit.</h5>
                 <h5>AdventHealth Celebration Hospital is part of the AdventHealth network, which is operated by the Seventh-day Adventist Church. Serving much of the Southeastern United States, the Caribbean and South America, the Adventist Health System operates 44 hospitals in 10 states, making it the largest protestant, not-for-profit healthcare systems in the country.</h5>
                 <br />

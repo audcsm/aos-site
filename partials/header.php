@@ -20,26 +20,27 @@
     <body>
         <header id="header">
             <div class="container">
-                <div class="logo">
+                <div class="logo" onclick="window.location.href='./index.php'">
                 </div>
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-heading">About</a>
                         <ul class="dropdown">
-                            <li><a>Procedures</a></li>
-                            <li><a>The Hospital</a></li>
-                            <li><a>Meet Dr. Smith</a></li>
+                            <li onclick="window.location.href='./procedures.php'"><a>Procedures</a></li>
+                            <li onclick="window.location.href='./hospital.php'"><a>The Hospital</a></li>
+                            <li onclick="window.location.href='./meet-dr.php'"><a>Meet Dr. Smith</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-heading">Resources</a>
                         <ul class="dropdown">
-                            <li><a>Pre- and Post-op Resources</a></li>
-                            <li><a>Video Gallery</a></li>
-                            <li><a>Blog</a></li>
+                            <li onclick="window.location.href='./patient-stories.php'"><a>Patient Stories</a></li>
+                            <li onclick="window.location.href='#'"><a>Pre- and Post-op Resources</a></li>
+                            <li onclick="window.location.href='#'"><a>Video Gallery</a></li>
+                            <li onclick="window.location.href='#'"><a>Blog</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-heading" style="cursor: pointer">Start Here</a></li>
+                    <li class="nav-item" onclick="window.location.href='#'"><a class="nav-heading" style="cursor: pointer">Start Here</a></li>
                 </ul>
             </div>
         </header>

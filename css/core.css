@@ -76,6 +76,7 @@ main {
     margin: 0;
     justify-self: flex-start;
     transition: 0.15s linear;
+    cursor: pointer; 
 }
 .bio-img {
     display: flex;

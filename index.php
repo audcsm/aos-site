@@ -13,7 +13,7 @@ include_once('./partials/header.php');
                     <h1 class="text_right">AdventHealth Celebration <br />Bariatric Surgery</h1>
                     <h2>Based in Celebration, Central Florida</h2>
                     <h4>Introductory information, marketing message, here.</h4>
-                    <a class="btn large">Start here <i class="bi bi-chevron-double-right"></i></a>
+                    <a class="btn large" onclick="window.location.href='#'">Start here <i class="bi bi-chevron-double-right"></i></a>
                 </div>
             </div>
             <div class="container">
@@ -23,7 +23,7 @@ include_once('./partials/header.php');
                         <br />
                     </div>
                     <div class="col-sm-12 col-lg-3 centered">
-                        <a class="btn">Read more</a>
+                        <a class="btn" onclick="window.location.href='./hospital.php'">Read more</a>
                     </div>
                 </div>
                 <div class="row">
@@ -31,7 +31,7 @@ include_once('./partials/header.php');
                         <h5>Proin quis sem elit. Nunc eget eros aliquet, lobortis ante sit amet, porttitor turpis. Proin sodales fringilla condimentum. Phasellus tristique sem et orci feugiat, ac euismod purus faucibus. Curabitur pretium ante at nisi accumsan, vitae iaculis lectus porttitor.</h5>
                     </div>
                     <div class="col-sm-12 col-lg-3 centered">
-                        <a class="btn">Meet Dr. Smith</a>
+                        <a class="btn" onclick="window.location.href='./meet-dr.php'">Meet Dr. Smith</a>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ include_once('./partials/header.php');
             </div>
             <div class="container centered">
                 <h5>Marketing message with something like “click below to take the first step” Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus dui, cursus vitae elit quis, mattis suscipit massa.</h5>
-                <a class="btn large">Start here <i class="bi bi-chevron-double-right"></i></a>
+                <a class="btn large" onclick="window.location.href='#'">Start here <i class="bi bi-chevron-double-right"></i></a>
             </div>
         </main>
 
