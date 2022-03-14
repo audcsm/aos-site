@@ -1,0 +1,126 @@
+.questionnaire h2 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.questionnaire p {
+    text-align: center;
+}
+.questionnaire .buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+.questionnaire .btn.large {
+    max-width: 400px;
+}
+
+.noSurgery {
+    display: none;
+}
+.noSurgery__columns {
+    display: flex;
+    justify-content: space-around;
+}
+.noSurgery__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.noSurgery__column select, .noSurgery__column input {
+    height: 40px;
+    min-width: 150px;
+    background-color: #EBEBEB;
+    border: none;
+}
+
+
+.hadSurgery {
+    display: none;
+}
+.hadSurgery h3 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.hadSurgery__buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.hadSurgery__buttons .btn {
+}
+
+
+.yesEligible,
+.notEligible {
+    display: none;
+    background-color: #DC0451;
+}
+.yesEligible.active,
+.notEligible.active {
+    display: block;
+}
+.yesEligible .container,
+.notEligible .container {
+    text-align: center;
+    padding: 100px;
+}
+.yesEligible .btn__white {
+    background-color: white;
+    color: #DC0451;
+    margin: 35px;
+    padding: 15px 20px;
+    border-radius: 0;
+    line-height: 1;
+    font-weight: bold;
+    font-size: 20px;
+}
+.yesEligible .btn__white:hover {
+    background-color: #1F145D;
+    color: white;
+}
+.yesEligible h2,
+.notEligible h2 {
+    color: white;
+    margin: 0px;
+}
+.yesEligible p,
+.notEligible p{
+    color: white;
+    margin: 3px;
+}
+.notEligible .container div {
+    margin-top: 35px;
+}
+
+
+
+@media (max-width: 767px) {
+    .noSurgery__columns {
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    .noSurgery__column form {
+        padding-bottom: 15px;
+    }
+    
+    .noSurgery__column {
+        padding-bottom: 20px;
+    }
+    
+    .questionnaire .buttons {
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    .questionnaire .btn {
+        font-size: 17px;
+        width: 300px;
+        margin: 10px 0px;
+    }
+    
+    .yesEligible .container, 
+    .notEligible .container {
+        padding: 100px 70px;
+    }
+}

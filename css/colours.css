@@ -84,3 +84,16 @@ footer {
     background-color: var(--navy);
     color: var(--white) !important;
 }
+
+
+/* QUESTIONNAIRE */
+.questionnaire .inactive {
+    background-color: var(--light-grey);
+}
+.questionnaire .inactive:hover {
+    background-color: var(--grey);
+}
+.questionnaire .navy {
+    background-color: var(--navy);
+    color: white;
+}
