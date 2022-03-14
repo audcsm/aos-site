@@ -45,12 +45,20 @@ header .container {
     height: 100%;
 }
 .nav-item:hover > .dropdown {
-    display: block;
-    position: absolute;
+    opacity: 1;
+    margin-top: 0;
+    z-index: 1;
+    visibility: visible;
 }
 .dropdown {
-    display: none;
+    opacity: 0;
+    visibility: collapse;
+    margin-top: -10px;
+    display: block;
+    position: absolute;
     list-style-type: none;
     padding-left: 0;
-    width: 300%;
+    width: 310%;
+    transition: all 0.2s ease-in-out;
+    z-index: -1;
 }

@@ -50,6 +50,10 @@ header .nav-heading {
     font-style: italic;
     cursor: pointer;
     padding: 10px 20px;
+    transition: 0.15s ease-in-out;
+}
+.dropdown li:hover {
+    padding-left: 25px;
 }
 
 

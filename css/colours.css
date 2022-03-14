@@ -21,6 +21,9 @@ header {
 .sticky .dropdown {
     border-top: 5px solid var(--grey);
 }
+.nav-item:hover > .nav-heading {
+    color: var(--grey) !important;
+}
 .nav-heading {
     color: var(--black);
 }

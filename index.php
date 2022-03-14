@@ -13,7 +13,7 @@ include_once('./partials/header.php');
                     <h1 class="text_right">AdventHealth Celebration <br />Bariatric Surgery</h1>
                     <h2>Based in Celebration, Central Florida</h2>
                     <h4>Introductory information, marketing message, here.</h4>
-                    <a class="btn large" onclick="window.location.href='#'">Start here <i class="bi bi-chevron-double-right"></i></a>
+                    <a class="btn large" onclick="window.location.href='./start-here.php'">Start here <i class="bi bi-chevron-double-right"></i></a>
                 </div>
             </div>
             <div class="container">
@@ -46,7 +46,7 @@ include_once('./partials/header.php');
             </div>
             <div class="container centered">
                 <h5>Marketing message with something like “click below to take the first step” Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus dui, cursus vitae elit quis, mattis suscipit massa.</h5>
-                <a class="btn large" onclick="window.location.href='#'">Start here <i class="bi bi-chevron-double-right"></i></a>
+                <a class="btn large" onclick="window.location.href='./start-here.php'">Start here <i class="bi bi-chevron-double-right"></i></a>
             </div>
         </main>
 

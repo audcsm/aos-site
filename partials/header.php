@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="./css/typography.css" />
         <link rel="stylesheet" href="./css/colours.css" />
+        <link rel="stylesheet" href="./css/questionnaire.css" />
         <link rel="stylesheet" href="./css/header.css" />
         <link rel="stylesheet" href="./css/footer.css" />
         <link rel="stylesheet" href="./css/core.css" />
@@ -40,7 +41,7 @@
                             <li onclick="window.location.href='#'"><a>Blog</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item" onclick="window.location.href='#'"><a class="nav-heading" style="cursor: pointer">Start Here</a></li>
+                    <li class="nav-item" onclick="window.location.href='./start-here.php'"><a class="nav-heading" style="cursor: pointer">Start Here</a></li>
                 </ul>
             </div>
         </header>
