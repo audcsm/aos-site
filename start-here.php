@@ -107,6 +107,24 @@ include_once('./partials/header.php');
                         </div>
                     </div>
                 </div>
+                <div class="yesEligible">
+                    <div class="container">
+                        <h2 class="h2">You are eligible for an operation.</h2>
+                        <a class="btn">Get in contact <i class="bi bi-chevron-double-right"></i></a>
+                        <div>
+                            <p>This will take you to a form where we can get more information about you and your interests.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="notEligible">
+                    <div class="container">
+                        <h2 class="h2">Unfortunately, you are not eligible to claim</h2>
+                        <div>
+                            <p>From the information you have provided you are not eligible to claim.</p>
+                            <p>If you have any questions, please call us on 0333 200 0069</p>
+                        </div>
+                    </div>
+                 </div>
             </div>
         </main>
 
