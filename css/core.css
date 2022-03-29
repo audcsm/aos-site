@@ -35,7 +35,7 @@ main {
     display: flex;
     align-items: center;
 }
-#pointer_left {
+#pointer_left, #pointer_right {
     height: 150px;
     position: relative;
     margin-top: auto;
@@ -48,12 +48,6 @@ main {
     bottom: 0;
     width: 0;
     height: 0;
-}
-#pointer_right {
-    height: 150px;
-    position: relative;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 #pointer_right:before {
     content: "";
@@ -145,4 +139,29 @@ main {
     border-bottom-right-radius: 0;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 991px) {
+    /* FEATURE */
+    #pointer_left {
+        height: 50px;
+        margin-bottom: 15px;
+    }
+    #pointer_right {
+        height: 50px;
+        margin-left: auto;
+    }
+    #pointer_left:before {
+        right: -25px;
+    }
+    #pointer_right:before {
+        left: -25px;
+    }
+    
+    /* BUTTONS */
+    .btn {
+        margin-bottom: 30px;
+    }
 }

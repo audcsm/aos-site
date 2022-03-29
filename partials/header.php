@@ -23,7 +23,9 @@
             <div class="container">
                 <div class="logo" onclick="window.location.href='./index.php'">
                 </div>
-                <ul class="nav">
+                <span id="mobileNavOpen" onclick="mobileNavOpen()">&#9776;</span>
+                <ul class="nav" id="nav">
+                    <a id="mobileNavClose" onclick="mobileNavClose()">&times;</a>
                     <li class="nav-item">
                         <a class="nav-heading">About</a>
                         <ul class="dropdown">
@@ -46,3 +48,12 @@
             </div>
         </header>
         <script src="./scripts/app.js"></script>
+        <script>
+        function mobileNavOpen() {
+          document.getElementById("nav").style.width = "100%";
+        }
+
+        function mobileNavClose() {
+          document.getElementById("nav").style.width = "0";
+        }
+        </script>

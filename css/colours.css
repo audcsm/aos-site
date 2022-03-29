@@ -100,3 +100,52 @@ footer {
     background-color: var(--navy);
     color: white;
 }
+.noSurgery__column select, .noSurgery__column input {
+    background-color: var(--light-grey);
+}
+.yesEligible.active,
+.notEligible.active {
+    background-color: rgba(0,0,0,.5);
+}
+.yesEligible .container,
+.notEligible .container {
+    background-color: var(--navy);
+}
+.yesEligible h2,
+.notEligible h2,
+.yesEligible p,
+.notEligible p {
+    color: white;
+}
+
+
+
+@media (max-width: 991px) {
+    /* FEATURE */
+    #pointer_left::before {
+        border-left: 25px solid var(--navy);
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+    }
+    #pointer_right::before {
+        border-right: 25px solid var(--navy);
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+    }
+}
+
+@media (max-width: 767px) {
+    /* NAV */
+    #mobileNavOpen, #mobileNavClose {
+        color: var(--navy);
+    }
+    header .nav {
+        background-color: var(--grey);
+    }
+    header .nav-item:hover > .nav-heading {
+        color: var(--white) !important;
+    }
+    header .dropdown {
+        background-color: var(--grey);
+    }
+}

@@ -109,7 +109,7 @@ include_once('./partials/header.php');
                 </div>
                 <div class="yesEligible">
                     <div class="container">
-                        <h2 class="h2">You are eligible for an operation.</h2>
+                        <h2 class="h2">Eligible</h2>
                         <a class="btn">Get in contact <i class="bi bi-chevron-double-right"></i></a>
                         <div>
                             <p>This will take you to a form where we can get more information about you and your interests.</p>
@@ -118,10 +118,10 @@ include_once('./partials/header.php');
                 </div>
                 <div class="notEligible">
                     <div class="container">
-                        <h2 class="h2">Unfortunately, you are not eligible to claim</h2>
+                        <h2 class="h2">Not Eligible</h2>
                         <div>
-                            <p>From the information you have provided you are not eligible to claim.</p>
-                            <p>If you have any questions, please call us on 0333 200 0069</p>
+                            <p>Your calculated BMI is ---. Patients typically have a BMI of 40+, or 35+ with obesity-related medical problems.</p>
+                            <p>If you feel this assessment is incorrect, do not hesitate to get in contact.</p>
                         </div>
                     </div>
                  </div>
@@ -159,13 +159,11 @@ function triggerEligible(){
         if (bmiCalc >= 40 || (bmiCalc >= 35 && $("#conditions").val() == "yes")) {
             $(".notEligible").removeClass("active");
             $(".yesEligible").addClass("active");
-            alert("yes eligible");
         }
         // not eligible
         else {
             $(".yesEligible").removeClass("active");
             $(".notEligible").addClass("active");
-            alert("not eligible");
         }
     }
 }

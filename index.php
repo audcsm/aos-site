@@ -37,11 +37,11 @@ include_once('./partials/header.php');
             </div>
             <div class="feature-section">
                 <div class="row">
-                    <span id="pointer_left" class="col-sm-0 col-lg-3"></span>
+                    <span id="pointer_left" class="col-sm-6 col-lg-3"></span>
                     <div id="feature-text" class="col-sm-12 col-lg-6">
                         <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus dui, cursus vitae elit quis, mattis suscipit massa. Fusce nec diam leo."</p></blockquote>
                     </div>
-                    <span id="pointer_right" class="col-sm-0 col-lg-3"></span>
+                    <span id="pointer_right" class="col-sm-6 col-lg-3"></span>
                 </div>
             </div>
             <div class="container centered">

@@ -5,20 +5,23 @@ Bootstrap source: https://getbootstrap.com/
 
 typography.css: 
 * font families
-* font colours/sizes
-* text element formatting (margin, padding, border, centering, etc)
+* font sizes/styles
+* text element formatting (margin, padding, border, centering, etc)  
 
 colours.css:
-* element and background colours for all areas of the site
+* element and background colours for all areas of the site  
 
 header.css:
 * all elements within the header
-* class variations for text, colours, etc.
+* class variations for text, etc.  
 
 footer.css:
 * all elements within the footer
-* class variations for text, colours, etc.
+* class variations for text, etc.  
 
 core.css:
 * all elements outside of header and footer
-* buttons, grids, columns, forms
+* buttons, grids, columns, forms  
+
+questionnaire.css:
+* all elements in main content of start-here.php
