@@ -103,18 +103,16 @@ footer {
 .noSurgery__column select, .noSurgery__column input {
     background-color: var(--light-grey);
 }
-.yesEligible.active,
-.notEligible.active {
+.qualifies.active, .disqualifies.active {
     background-color: rgba(0,0,0,.5);
 }
-.yesEligible .container,
-.notEligible .container {
+.qualifies .container, .disqualifies .container {
     background-color: var(--navy);
 }
-.yesEligible h2,
-.notEligible h2,
-.yesEligible p,
-.notEligible p {
+.qualifies h2, .disqualifies h2, .qualifies p, .disqualifies p {
+    color: white;
+}
+.qualifies .close-overlay, .disqualifies .close-overlay {
     color: white;
 }
 

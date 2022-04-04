@@ -1,31 +1,29 @@
-.questionnaire h2 {
-    text-align: center;
-    padding-bottom: 15px;
+.questionnaire__content {
+    padding-top: 30px;
 }
-.questionnaire p {
-    text-align: center;
-}
-.questionnaire .buttons {
+.questionnaire__buttons {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     padding-bottom: 50px;
+    margin-bottom: auto;
 }
-.questionnaire .btn.large {
-    max-width: 400px;
+.questionnaire__buttons .btn.large {
+    margin-top: 0;
+    margin-bottom: 40px;
 }
 
 .noSurgery {
     display: none;
 }
-.noSurgery__columns {
-    display: flex;
-    justify-content: space-around;
-}
 .noSurgery__column {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.noSurgery__column form {
+    padding-bottom: 30px;
 }
 .noSurgery__column select, .noSurgery__column input {
     height: 40px;
@@ -37,54 +35,49 @@
 .hadSurgery {
     display: none;
 }
-.hadSurgery h3 {
-    text-align: center;
-    margin-bottom: 25px;
-}
 .hadSurgery__buttons {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    padding: 0 50px;
 }
 
 
-.yesEligible,
-.notEligible {
+.qualifies, .disqualifies {
     display: none;
+    margin-top: -20px;
 }
-.yesEligible.active,
-.notEligible.active {
+.qualifies.active, .disqualifies.active {
     display: flex;
     position: fixed;
     z-index: 5000;
     inset: 0;
     align-items: center;
+    margin-top: 0;
 }
-.yesEligible .container,
-.notEligible .container {
-    text-align: center;
+.qualifies .container, .disqualifies .container {
     padding: 100px;
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
     border-top-right-radius: 4em;
     border-bottom-left-radius: 4em;
+    position: relative;
 }
-.yesEligible h2,
-.notEligible h2 {
-    margin: 0px;
-}
-.yesEligible p,
-.notEligible p {
-    margin: 3px;
-}
-.notEligible .container div {
+.disqualifies .container div {
     margin-top: 35px;
+}
+.qualifies .close-overlay, .disqualifies .close-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .questionnaire .buttons .btn.large {
-        font-size: 1.5rem !important;
+    .questionnaire__buttons .btn.large {
         margin: 10px !important;
     }
     .noSurgery__column form {
@@ -93,37 +86,23 @@
 }
 
 @media (max-width: 767px) {
-    .noSurgery__columns {
-        flex-direction: column;
-        align-content: center;
-    }
-    
-    .noSurgery__column form {
-        padding-bottom: 15px;
-    }
-    
-    .noSurgery__column {
-        padding-bottom: 20px;
-    }
-    
-    .questionnaire .hadSurgery__buttons .btn {
-        margin: 0 10px;
-    }
-    
-    .questionnaire .buttons {
-        flex-direction: column;
-        align-content: center;
+    .hadSurgery__buttons {
+        padding: 0;
         align-items: center;
     }
-    
+    .questionnaire .hadSurgery__buttons .btn {
+        margin: 10px 0;
+    }
+    .questionnaire__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
     .questionnaire .btn {
-        font-size: 17px;
         width: 300px;
         margin: 10px 0px;
     }
-    
-    .yesEligible .container, 
-    .notEligible .container {
+    .qualifies .container, 
+    .disqualifies .container {
         padding: 100px 70px;
     }
 }
