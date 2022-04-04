@@ -25,11 +25,6 @@
 .noSurgery__column form {
     padding-bottom: 30px;
 }
-.noSurgery__column select, .noSurgery__column input {
-    height: 40px;
-    min-width: 150px;
-    border: none;
-}
 
 
 .hadSurgery {

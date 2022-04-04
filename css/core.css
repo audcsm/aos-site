@@ -9,6 +9,17 @@ main {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+select, input {
+    height: 40px;
+    min-width: 150px;
+    border: none;
+}
+textarea {
+    border: none;
+}
+label {
+    padding-top: 5px;
+}
 
 
 /* BANNER */
@@ -141,6 +152,25 @@ main {
     margin-bottom: 20px;
 }
 
+
+/* CONTACT FORM */
+form.contact label, form.contact input, form.contact select {
+    width: 100%;
+}
+form.contact .row {
+    margin-bottom: 50px;
+}
+#message-wrapper {
+    margin-top: 40px;
+}
+
+
+@media (min-width: 992px) {
+    /* CONTACT FORM */
+    .form-wrapper {
+        padding: 0 15rem;
+    }
+}
 
 
 @media (max-width: 991px) {
