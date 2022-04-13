@@ -118,7 +118,7 @@ footer {
 
 
 /* CONTACT FORM */
-form.contact span {
+form.contact span, #need-help {
     color: var(--grey);
 }
 

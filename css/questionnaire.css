@@ -22,7 +22,7 @@
     align-items: center;
     flex-direction: column;
 }
-.noSurgery__column form {
+.noSurgery__column .input-wrapper {
     padding-bottom: 30px;
 }
 
@@ -75,7 +75,7 @@
     .questionnaire__buttons .btn.large {
         margin: 10px !important;
     }
-    .noSurgery__column form {
+    .noSurgery__column .input-wrapper {
         margin-bottom: 40px;
     }
 }

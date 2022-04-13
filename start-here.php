@@ -1,8 +1,21 @@
 <?php
 
-$PageTitle="Advanced Obesity Surgery";
+$PageTitle="Start Here";
 
 include_once('./partials/header.php');
+
+session_start();
+
+function saveData() {
+    $_SESSION["height"] = $_POST["height"];
+    $_SESSION["weight"] = $_POST["weight"];
+    $_SESSION["conditions"] = $_POST["conditions"];
+}
+if (isset($_POST['noSurgery-form-submit'])){
+    saveData();
+    header("location: http://advancedobesitysurgery.com/AUDREY/aos-site/contact.php?hsp=0");
+    exit();
+}
 
 ?>
 
@@ -26,79 +39,82 @@ include_once('./partials/header.php');
                             </div>
                             <div class="col-sm-12 col-lg-5">
                                 <div class="noSurgery">
-                                    <div class="noSurgery__column">
-                                        <h3>1</h3>
-                                        <h5>What is your height?</h5>
-                                        <p>We will use this to calculate your BMI.</p>
-                                        <form>
-                                            <select name="height" id="height" onchange="checkBMI()">
-                                                <option value="blank" >Please select</option>
-                                                <optgroup label="4">
-                                                    <option value="48">4&rsquo;</option>
-                                                    <option value="49">4&rsquo;&nbsp;1&rdquo;</option>
-                                                    <option value="50">4&rsquo;&nbsp;2&rdquo;</option>
-                                                    <option value="51">4&rsquo;&nbsp;3&rdquo;</option>
-                                                    <option value="52">4&rsquo;&nbsp;4&rdquo;</option>
-                                                    <option value="53">4&rsquo;&nbsp;5&rdquo;</option>
-                                                    <option value="54">4&rsquo;&nbsp;6&rdquo;</option>
-                                                    <option value="55">4&rsquo;&nbsp;7&rdquo;</option>
-                                                    <option value="56">4&rsquo;&nbsp;8&rdquo;</option>
-                                                    <option value="57">4&rsquo;&nbsp;9&rdquo;</option>
-                                                    <option value="58">4&rsquo;&nbsp;10&rdquo;</option>
-                                                    <option value="59">4&rsquo;&nbsp;11&rdquo;</option>
-                                                </optgroup>
-                                                <optgroup label="5">
-                                                    <option value="60">5&rsquo;</option>
-                                                    <option value="61">5&rsquo;&nbsp;1&rdquo;</option>
-                                                    <option value="62">5&rsquo;&nbsp;2&rdquo;</option>
-                                                    <option value="63">5&rsquo;&nbsp;3&rdquo;</option>
-                                                    <option value="64">5&rsquo;&nbsp;4&rdquo;</option>
-                                                    <option value="65">5&rsquo;&nbsp;5&rdquo;</option>
-                                                    <option value="66">5&rsquo;&nbsp;6&rdquo;</option>
-                                                    <option value="67">5&rsquo;&nbsp;7&rdquo;</option>
-                                                    <option value="68">5&rsquo;&nbsp;8&rdquo;</option>
-                                                    <option value="69">5&rsquo;&nbsp;9&rdquo;</option>
-                                                    <option value="70">5&rsquo;&nbsp;10&rdquo;</option>
-                                                    <option value="71">5&rsquo;&nbsp;11&rdquo;</option>
-                                                </optgroup>
-                                                <optgroup label="6">
-                                                    <option value="72">6&rsquo;</option>
-                                                    <option value="73">6&rsquo;&nbsp;1&rdquo;</option>
-                                                    <option value="74">6&rsquo;&nbsp;2&rdquo;</option>
-                                                    <option value="75">6&rsquo;&nbsp;3&rdquo;</option>
-                                                    <option value="76">6&rsquo;&nbsp;4&rdquo;</option>
-                                                    <option value="77">6&rsquo;&nbsp;5&rdquo;</option>
-                                                    <option value="78">6&rsquo;&nbsp;6&rdquo;</option>
-                                                    <option value="79">6&rsquo;&nbsp;7&rdquo;</option>
-                                                    <option value="80">6&rsquo;&nbsp;8&rdquo;</option>
-                                                    <option value="81">6&rsquo;&nbsp;9&rdquo;</option>
-                                                    <option value="82">6&rsquo;&nbsp;10&rdquo;</option>
-                                                    <option value="83">6&rsquo;&nbsp;11&rdquo;</option>
-                                                </optgroup>
-                                            </select>
-                                        </form>
-                                        <h3>2</h3>
-                                        <h5>What is your weight in lbs?</h5>
-                                        <p>We will use this to calculate your BMI.</p>
-                                        <form>
-                                            <input type="number" id="weight" name="weight" min="100" max="1500" placeholder="Enter weight" onchange="checkBMI()">
-                                        </form>
-                                        <h3>3</h3>
-                                        <h5>Do you have any obesity-related medical problems?</h5>
-                                        <p>(diabetes, high blood pressure, sleep apnea, disabling osteoarthritis, etc)</p>
-                                        <form>
-                                            <select id="conditions" onchange="checkBMI()">
-                                                <option value="blank">Please select</option>
-                                                <option value="no">No, I have none of these</option>
-                                                <option value="yes">Yes, I have one or more of these</option>
-                                            </select>
-                                        </form>
-                                    </div>
+                                    <form action="start-here.php" method="post" id="noSurgery-form">
+                                        <div class="noSurgery__column">
+                                            <h3>1</h3>
+                                            <h5>What is your height?</h5>
+                                            <p>We will use this to calculate your BMI.</p>
+                                            <div class="input-wrapper">
+                                                <select name="height" id="height" onchange="checkBMI()">
+                                                    <option value="blank" >Please select</option>
+                                                    <optgroup label="4">
+                                                        <option value="48">4&rsquo;</option>
+                                                        <option value="49">4&rsquo;&nbsp;1&rdquo;</option>
+                                                        <option value="50">4&rsquo;&nbsp;2&rdquo;</option>
+                                                        <option value="51">4&rsquo;&nbsp;3&rdquo;</option>
+                                                        <option value="52">4&rsquo;&nbsp;4&rdquo;</option>
+                                                        <option value="53">4&rsquo;&nbsp;5&rdquo;</option>
+                                                        <option value="54">4&rsquo;&nbsp;6&rdquo;</option>
+                                                        <option value="55">4&rsquo;&nbsp;7&rdquo;</option>
+                                                        <option value="56">4&rsquo;&nbsp;8&rdquo;</option>
+                                                        <option value="57">4&rsquo;&nbsp;9&rdquo;</option>
+                                                        <option value="58">4&rsquo;&nbsp;10&rdquo;</option>
+                                                        <option value="59">4&rsquo;&nbsp;11&rdquo;</option>
+                                                    </optgroup>
+                                                    <optgroup label="5">
+                                                        <option value="60">5&rsquo;</option>
+                                                        <option value="61">5&rsquo;&nbsp;1&rdquo;</option>
+                                                        <option value="62">5&rsquo;&nbsp;2&rdquo;</option>
+                                                        <option value="63">5&rsquo;&nbsp;3&rdquo;</option>
+                                                        <option value="64">5&rsquo;&nbsp;4&rdquo;</option>
+                                                        <option value="65">5&rsquo;&nbsp;5&rdquo;</option>
+                                                        <option value="66">5&rsquo;&nbsp;6&rdquo;</option>
+                                                        <option value="67">5&rsquo;&nbsp;7&rdquo;</option>
+                                                        <option value="68">5&rsquo;&nbsp;8&rdquo;</option>
+                                                        <option value="69">5&rsquo;&nbsp;9&rdquo;</option>
+                                                        <option value="70">5&rsquo;&nbsp;10&rdquo;</option>
+                                                        <option value="71">5&rsquo;&nbsp;11&rdquo;</option>
+                                                    </optgroup>
+                                                    <optgroup label="6">
+                                                        <option value="72">6&rsquo;</option>
+                                                        <option value="73">6&rsquo;&nbsp;1&rdquo;</option>
+                                                        <option value="74">6&rsquo;&nbsp;2&rdquo;</option>
+                                                        <option value="75">6&rsquo;&nbsp;3&rdquo;</option>
+                                                        <option value="76">6&rsquo;&nbsp;4&rdquo;</option>
+                                                        <option value="77">6&rsquo;&nbsp;5&rdquo;</option>
+                                                        <option value="78">6&rsquo;&nbsp;6&rdquo;</option>
+                                                        <option value="79">6&rsquo;&nbsp;7&rdquo;</option>
+                                                        <option value="80">6&rsquo;&nbsp;8&rdquo;</option>
+                                                        <option value="81">6&rsquo;&nbsp;9&rdquo;</option>
+                                                        <option value="82">6&rsquo;&nbsp;10&rdquo;</option>
+                                                        <option value="83">6&rsquo;&nbsp;11&rdquo;</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                            <h3>2</h3>
+                                            <h5>What is your weight in lbs?</h5>
+                                            <p>We will use this to calculate your BMI.</p>
+                                            <div class="input-wrapper">
+                                                <input type="number" id="weight" name="weight" min="100" max="1500" placeholder="Enter weight" onchange="checkBMI()">
+                                            </div>
+                                            <h3>3</h3>
+                                            <h5>Do you have any obesity-related medical problems?</h5>
+                                            <p>(diabetes, high blood pressure, sleep apnea, disabling osteoarthritis, etc)</p>
+                                            <div class="input-wrapper">
+                                                <select id="conditions" name="conditions" onchange="checkBMI()">
+                                                    <option value="blank">Please select</option>
+                                                    <option value="No">No, I have none of these</option>
+                                                    <option value="Yes">Yes, I have one or more of these</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                                 <div class="hadSurgery">
                                     <h3 class="h3">What are you looking for?</h3>
                                     <div class="hadSurgery__buttons">
-                                        <a href="#" class="btn">I have an issue with my operation and am in need of a revision</a>
+                                        <a href="./contact.php" onclick="location.href=this.href+'?hsp='+1;return false;" class="btn">I have an issue with my operation and am in need of a revision</a>
+                                        <!--- button below will redirect to post-op resources -->
                                         <a href="#" class="btn">I need help with maintaining my health post-operation</a>
                                     </div>
                                 </div>
@@ -110,7 +126,7 @@ include_once('./partials/header.php');
                     <div class="container">
                         <a class="close-overlay" onclick="closeOverlay('.qualifies')">&times;</a>
                         <h2 class="h2">Please contact us to set up a consultation.</h2>
-                        <a class="btn">Get in contact <i class="bi bi-chevron-double-right"></i></a>
+                        <button type="submit" form="noSurgery-form" name="noSurgery-form-submit" class="btn">Get in contact <i class="bi bi-chevron-double-right"></i></button>
                         <div>
                             <p>This will take you to a form where we can get more information about you and your needs.</p>
                         </div>
@@ -152,7 +168,7 @@ function checkBMI(){
         var bmiRound = Math.round(bmiCalc);
             
         // if bmiCalc >= 40 OR if bmiCalc >= 35 && conditions, qualifies
-        if (bmiCalc >= 40 || (bmiCalc >= 35 && $("#conditions").val() == "yes")) {
+        if (bmiCalc >= 40 || (bmiCalc >= 35 && $("#conditions").val() == "Yes")) {
             openOverlay('.qualifies');
         }
         // doesn't qualify

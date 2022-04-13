@@ -9,7 +9,7 @@ main {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-select, input {
+* select, * input {
     height: 40px;
     min-width: 150px;
     border: none;
@@ -160,8 +160,15 @@ form.contact label, form.contact input, form.contact select {
 form.contact .row {
     margin-bottom: 50px;
 }
+form.contact .hidden {
+    display: none !important;
+}
 #message-wrapper {
     margin-top: 40px;
+}
+#need-help {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
