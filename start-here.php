@@ -139,6 +139,7 @@ if (isset($_POST['noSurgery-form-submit'])){
                         <div>
                             <p id="showBMI">Your calculated BMI is ---. Patients typically have a BMI of 40+, or 35+ with obesity-related medical problems.</p>
                             <p>If you feel this assessment is incorrect, do not hesitate to get in contact.</p>
+                            <a href="./index.php" class="btn">Back to home</a>
                         </div>
                     </div>
                  </div>

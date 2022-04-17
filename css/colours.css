@@ -34,6 +34,9 @@ header {
     border-top: 8px solid var(--grey);
     background: var(--white);
 }
+.nav-item:hover > .dropdown {
+    box-shadow: -1px 1px 3px var(--black);
+}
 
 
 /* FOOTER */
@@ -114,6 +117,10 @@ footer {
 }
 .qualifies .close-overlay, .disqualifies .close-overlay {
     color: white;
+}
+.qualifies .btn:hover, .disqualifies .btn:hover {
+    background-color: var(--light-grey);
+    color: var(--black) !important;
 }
 
 

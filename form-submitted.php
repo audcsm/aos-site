@@ -14,7 +14,7 @@ include_once('./partials/header.php');
                 </div>
             </div>
             <div class="container">
-                <h5>Your inquiry has been received. You can expect a response within 2-3 business days.</h5>
+                <p>Your inquiry has been received. You can expect a response within 2-3 business days.</p>
                 <a class="btn" href="./index.php">Back to home</a>
             </div>
         </main>

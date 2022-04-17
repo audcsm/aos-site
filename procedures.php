@@ -14,30 +14,37 @@ include_once('./partials/header.php');
                 </div>
             </div>
             <div class="container">
-                <h5>Introductory information about the procedures available, e.g. how many and which is most common. “Click below to read more about each procedure.”</h5>
+                <p>Dr. Smith has been involved with bariatric surgery for more than 20 years, and was one of the first surgeons in the world to perform the Duodenal Switch procedure completely laparoscopically. Click the buttons below to learn more about each procedure offered.</p>
                 <br />
                 <div class="row">
                     <div class="col-sm-12 col-lg-4 centered">
                         <h3><strong>Laparoscopic Duodenal Switch</strong></h3>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                        <p>Sometimes referred to as the BPD/DS or the "Switch," this procedure combines restriction with malabsorption of fat to give you a powerful result.</p>
                         <a class="btn" onclick="window.location.href='./ds.php'">Read more</a>
                     </div>
                     <div class="col-sm-12 col-lg-4 centered">
                         <h3><strong>Laparoscopic RNY Gastric Bypass</strong></h3>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                        <p>As the most commonly performed operation over the past 20 years, this procedure activates weight loss well in all weight ranges and has a strong long-term safety record.</p>
                         <a class="btn" onclick="window.location.href='./gb.php'">Read more</a>
                     </div>
                     <div class="col-sm-12 col-lg-4 centered">
                         <h3><strong>Laparoscopic Sleeve Gastrectomy</strong></h3>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                        <p>This is a relatively new operation that can be performed either as a standalone procedure or as part of a staged operation.</p>
                         <a class="btn" onclick="window.location.href='./sg.php'">Read more</a>
                     </div>
                 </div>
             </div>
             <div class="container">
                 <h2>Revisions of Bariatric Operations</h2>
-                <h5>Paragraph about revisions. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus dui, cursus vitae elit quis, mattis suscipit massa. Fusce nec diam leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus dui, cursus vitae elit quis, mattis suscipit massa. Fusce nec diam leo.</h5>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus dui, cursus vitae elit quis, mattis suscipit massa. Fusce nec diam leo.</h5>
+                <p>Dr. Smith does laparoscopic revisions of some bariatric operations, in selected situations where the operations have failed or are causing significant problems.</p>
+                <p>Some of the revisional procedures offered include:</p>
+                <ul>
+                    <li>Lap Gastric Band Removal, with conversion to Sleeve Gastrectomy and/or Duodenal Switch</li>
+                    <li>Re-Sleeving for Duodenal Switch and Sleeve Gastrectomy patients</li>
+                    <li>Limb-lengthening Procedures for RNY Gastric Bypass patients to create Distal Gastric Bypass</li>
+                    <li>Adding the bowel bypass portion of a Duodenal Switch to existing Sleeve Gastrectomy</li>
+                    <li>Reversal of Malabsorption for Duodenal Switch patients</li>
+                </ul>
             </div>
         </main>
 
