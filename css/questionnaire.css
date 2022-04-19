@@ -1,0 +1,103 @@
+.questionnaire__content {
+    padding-top: 30px;
+}
+.questionnaire__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    margin-bottom: auto;
+}
+.questionnaire__buttons .btn.large {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.noSurgery {
+    display: none;
+}
+.noSurgery__column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.noSurgery__column .input-wrapper {
+    padding-bottom: 30px;
+}
+
+
+.hadSurgery {
+    display: none;
+}
+.hadSurgery__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 50px;
+}
+
+
+.qualifies, .disqualifies {
+    display: none;
+    margin-top: -20px;
+}
+.qualifies.active, .disqualifies.active {
+    display: flex;
+    position: fixed;
+    z-index: 5000;
+    inset: 0;
+    align-items: center;
+    margin-top: 0;
+}
+.qualifies .container, .disqualifies .container {
+    padding: 100px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 4em;
+    border-bottom-left-radius: 4em;
+    position: relative;
+}
+.disqualifies .container div {
+    margin-top: 35px;
+}
+.qualifies .close-overlay, .disqualifies .close-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .questionnaire__buttons .btn.large {
+        margin: 10px !important;
+    }
+    .noSurgery__column .input-wrapper {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hadSurgery__buttons {
+        padding: 0;
+        align-items: center;
+    }
+    .questionnaire .hadSurgery__buttons .btn {
+        margin: 10px 0;
+    }
+    .questionnaire__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .questionnaire .btn {
+        width: 300px;
+        margin: 10px 0px;
+    }
+    .qualifies .container, 
+    .disqualifies .container {
+        padding: 100px 70px;
+    }
+}

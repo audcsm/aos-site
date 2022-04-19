@@ -1,9 +1,24 @@
+body {
+    overflow-x: hidden;
+}
+
 main {
     margin-top: 90px;
 }
 .container {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+* select, * input {
+    height: 40px;
+    min-width: 150px;
+    border: none;
+}
+textarea {
+    border: none;
+}
+label {
+    padding-top: 5px;
 }
 
 
@@ -31,7 +46,7 @@ main {
     display: flex;
     align-items: center;
 }
-#pointer_left {
+#pointer_left, #pointer_right {
     height: 150px;
     position: relative;
     margin-top: auto;
@@ -45,12 +60,6 @@ main {
     width: 0;
     height: 0;
 }
-#pointer_right {
-    height: 150px;
-    position: relative;
-    margin-top: auto;
-    margin-bottom: auto;
-}
 #pointer_right:before {
     content: "";
     position: absolute;
@@ -62,6 +71,18 @@ main {
 
 
 /* IMAGES */
+.logo {
+    background-image: url(../images/advhealth.png);
+    background-position: center;
+    background-size: contain;
+    height: 90px;
+    width: 235px;
+    padding: 0;
+    margin: 0;
+    justify-self: flex-start;
+    transition: 0.15s linear;
+    cursor: pointer; 
+}
 .bio-img {
     display: flex;
     justify-content: space-around;
@@ -129,4 +150,55 @@ main {
     border-bottom-right-radius: 0;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+
+/* CONTACT FORM */
+form.contact label, form.contact input, form.contact select {
+    width: 100%;
+}
+form.contact .row {
+    margin-bottom: 50px;
+}
+form.contact .hidden {
+    display: none !important;
+}
+#message-wrapper {
+    margin-top: 40px;
+}
+#need-help {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media (min-width: 992px) {
+    /* CONTACT FORM */
+    .form-wrapper {
+        padding: 0 15rem;
+    }
+}
+
+
+@media (max-width: 991px) {
+    /* FEATURE */
+    #pointer_left {
+        height: 50px;
+        margin-bottom: 15px;
+    }
+    #pointer_right {
+        height: 50px;
+        margin-left: auto;
+    }
+    #pointer_left:before {
+        right: -25px;
+    }
+    #pointer_right:before {
+        left: -25px;
+    }
+    
+    /* BUTTONS */
+    .btn {
+        margin-bottom: 30px;
+    }
 }

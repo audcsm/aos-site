@@ -16,17 +16,6 @@ header .container {
     justify-content: space-between;
     position: relative;
 }
-.logo {
-    background-image: url(../images/advhealth.jpg);
-    background-position: center;
-    background-size: contain;
-    height: 90px;
-    width: 235px;
-    padding: 0;
-    margin: 0;
-    justify-self: flex-start;
-    transition: 0.15s linear;
-}
 .sticky {
     position: fixed;
     top: 0;
@@ -49,6 +38,7 @@ header .container {
     margin-top: auto;
     margin-bottom: auto;
     height: 100%;
+    text-align: left;
 }
 .nav-item {
     position: relative;
@@ -56,12 +46,87 @@ header .container {
     height: 100%;
 }
 .nav-item:hover > .dropdown {
-    display: block;
-    position: absolute;
+    opacity: 1;
+    margin-top: 0;
+    z-index: 1;
+    visibility: visible;
 }
 .dropdown {
-    display: none;
+    opacity: 0;
+    visibility: collapse;
+    margin-top: -10px;
+    display: block;
+    position: absolute;
     list-style-type: none;
     padding-left: 0;
-    width: 300%;
+    width: 310%;
+    transition: all 0.2s ease-in-out;
+    z-index: -1;
+}
+#mobileNavOpen, #mobileNavClose {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    #mobileNavOpen {
+        font-size: 3em;
+        cursor: pointer;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-right: 5px;
+    }
+    #mobileNavClose {
+        display: block;
+        width: fit-content;
+        font-size: 4em;
+        padding-left: 15px;
+    }
+    header {
+        position: absolute;
+    }
+    header .nav {
+        z-index: 5000;
+        width: 0;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+        transition: 0.25s ease-in-out;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+    header .nav-item {
+        width: 100vw;
+        height: auto;
+        font-size: 1.25em;
+        margin-left: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    header .nav-item:hover > .dropdown {
+        height: fit-content;
+    }
+    header .nav-heading {
+        line-height: 1;
+    }
+    header .dropdown {
+        opacity: 1;
+        visibility: visible;
+        margin-top: 0;
+        display: block;
+        position: relative;
+        list-style-type: none;
+        padding-left: 0;
+        width: auto;
+        height: 0;
+        transition: all 0.2s ease-in-out;
+        z-index: -1;
+        overflow-y: hidden;
+        border-top: none;
+        padding-bottom: 15px;
+        font-size: 1em;
+    }
 }

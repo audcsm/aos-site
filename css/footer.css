@@ -1,0 +1,12 @@
+footer .container {
+    padding: 30px 12px;
+}
+footer .logo {
+    height: 75px;
+    width: 196px;
+    margin-bottom: 10px;
+}
+footer .nav {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
