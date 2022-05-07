@@ -7,7 +7,7 @@ include_once('./partials/header.php');
 ?>
 
         <main>
-            <div id="banner-img" style="background-image:url(http://placekitten.com/1300/600)">
+            <div id="banner-img" role="img" style="background-image:url(./images/waiting-area.jpg);background-position: right center;" alt="Chairs and a plant in a hospital waiting room">
                 <div class="banner-overlay_navy"></div>
                 <div class="container over-banner">
                     <h1 class="text_right">Procedures <br /></h1>

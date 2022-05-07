@@ -7,16 +7,16 @@
                     <div class="col-sm-12 col-lg-6">
                         <ul class="nav">
                             <li class="nav-item">
-                                <a class="nav-heading">Blog</a>
+                                <a onclick="window.location.href='./meet-dr.php'" class="nav-heading">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-heading">FAQ</a>
+                                <a onclick="window.location.href='./under-construction.php'" class="nav-heading">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-heading">Contact us</a>
+                                <a onclick="window.location.href='./start-here.php'" class="nav-heading">Start Here</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-heading">Privacy Policy</a>
+                                <a onclick="window.location.href='./under-construction.php'" class="nav-heading">Privacy Policy</a>
                             </li>
                         </ul>
                     </div>

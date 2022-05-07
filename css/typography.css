@@ -1,5 +1,5 @@
 body * {
-    font-family: 'Georgia', serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 h1 {
     font-weight: bold;
@@ -54,6 +54,9 @@ header .nav-heading {
 }
 .dropdown li:hover {
     padding-left: 25px;
+}
+.dropdown li a {
+    font-size: .9rem;
 }
 
 
