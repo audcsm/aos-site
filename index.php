@@ -7,7 +7,7 @@ include_once('./partials/header.php');
 ?>
 
         <main>
-            <div id="banner-img" style="background-image:url(http://placekitten.com/1300/600)">
+            <div id="banner-img" role="img" style="background-image:url(./images/hospital_drsmith.png);background-position: right top;" alt="Trees outside hospital and Dr Smith with operating robot">
                 <div class="banner-overlay_navy"></div>
                 <div class="container over-banner">
                     <h1 class="text_right">AdventHealth Celebration <br />Bariatric Surgery</h1>

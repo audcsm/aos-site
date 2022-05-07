@@ -38,9 +38,9 @@
                         <a class="nav-heading">Resources</a>
                         <ul class="dropdown">
                             <li onclick="window.location.href='./patient-stories.php'"><a>Patient Stories</a></li>
-                            <li onclick="window.location.href='#'"><a>Pre- and Post-op Resources</a></li>
-                            <li onclick="window.location.href='#'"><a>Video Gallery</a></li>
-                            <li onclick="window.location.href='#'"><a>Blog</a></li>
+                            <li onclick="window.location.href='./under-construction.php'"><a>Pre- and Post-op Resources</a></li>
+                            <li onclick="window.location.href='./under-construction.php'"><a>Video Gallery</a></li>
+                            <li onclick="window.location.href='./under-construction.php'"><a>Blog</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" onclick="window.location.href='./start-here.php'"><a class="nav-heading" style="cursor: pointer">Start Here</a></li>

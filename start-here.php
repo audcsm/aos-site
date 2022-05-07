@@ -20,7 +20,7 @@ if (isset($_POST['noSurgery-form-submit'])){
 ?>
 
         <main>
-            <div id="banner-img" style="background-image:url(http://placekitten.com/1300/600)">
+            <div id="banner-img" role="img" style="background-image:url(./images/hospital-garden.jpg);background-position: center;" alt="Outside the hospital in a garden">
                 <div class="banner-overlay_navy"></div>
                 <div class="container over-banner">
                     <h1 class="text_right">Begin Your Journey <br /></h1>
@@ -168,8 +168,8 @@ function checkBMI(){
         var bmiCalc = ($("#weight").val() / ($("#height").val() * $("#height").val())) * 703;
         var bmiRound = Math.round(bmiCalc);
             
-        // if bmiCalc >= 40 OR if bmiCalc >= 35 && conditions, qualifies
-        if (bmiCalc >= 40 || (bmiCalc >= 35 && $("#conditions").val() == "Yes")) {
+        // if bmiCalc >= 40 OR if bmiCalc > 34 && conditions, qualifies
+        if (bmiCalc >= 40 || (bmiCalc > 34 && $("#conditions").val() == "Yes")) {
             openOverlay('.qualifies');
         }
         // doesn't qualify

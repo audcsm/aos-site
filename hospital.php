@@ -7,7 +7,7 @@ include_once('./partials/header.php');
 ?>
 
         <main>
-            <div id="banner-img" style="background-image:url(http://placekitten.com/1300/600)">
+            <div id="banner-img" role="img" style="background-image:url(./images/hospital.jpg);background-position: bottom;" alt="Entrance to AdventHealth Celebration Hospital">
                 <div class="banner-overlay_navy"></div>
                 <div class="container over-banner">
                     <h1 class="text_right">AdventHealth Celebration Hospital <br />410 Celebration Place, 34747</h1>

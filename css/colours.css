@@ -158,4 +158,9 @@ form.contact span, #need-help {
     header .dropdown {
         background-color: var(--grey);
     }
+    
+    /* FEATURE */
+    #pointer_left::before, #pointer_right::before {
+        border: none;
+    }
 }

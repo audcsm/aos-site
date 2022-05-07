@@ -7,7 +7,7 @@ include_once('./partials/header.php');
 ?>
 
         <main>
-            <div id="banner-img" style="background-image:url(http://placekitten.com/1300/600)">
+            <div id="banner-img" role="img" style="background-image:url(./images/hospital-tower.jpg);background-position: center;" alt="One of the towers of the hospital architecture">
                 <div class="banner-overlay_navy"></div>
                 <div class="container over-banner">
                     <h1 class="text_right">Meet Dr. Dennis Smith <br />MD, FACS, FASMBS</h1>
@@ -22,7 +22,7 @@ include_once('./partials/header.php');
                         <br />
                     </div>
                     <div class="bio-img col-sm-12 col-lg-4">
-                        <img src="./images/drsmithportrait.jpg">
+                        <img src="./images/drsmithportrait.jpg" alt="Headshot of Dr Dennis Smith smiling">
                     </div>
                 </div>
                 <div class="row">
@@ -33,7 +33,7 @@ include_once('./partials/header.php');
                         <p>Continue about the development into using the robot, any extra studies or projects being worked on that are related, etc.</p>
                     </div>
                     <div class="bio-img col-sm-12 col-lg-4">
-                        <img src="./images/drsmithportrait2.jpg">
+                        <img src="./images/drsmith_robot.jpg" alt="Dr Smith standing next to his operating robot">
                     </div>
                 </div>
             </div>

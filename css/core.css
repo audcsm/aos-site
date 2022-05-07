@@ -25,6 +25,8 @@ label {
 /* BANNER */
 #banner-img {
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .over-banner {
     z-index: 2;
@@ -63,7 +65,7 @@ label {
 #pointer_right:before {
     content: "";
     position: absolute;
-    left: -75px;
+    left: -74px;
     bottom: 0;
     width: 0;
     height: 0;
@@ -136,12 +138,14 @@ label {
     margin: 10px 0;
 }
 .btn i {
-    transition: margin 0.15s ease-in-out;
+    transition: right 0.15s ease-in-out;
+    right: 0;
+    position: relative;
 }
 .btn:hover i {
-    margin-left: 5px;
-    margin-right: -5px;
-    transition: margin 0.15s ease-in-out;
+    transition: right 0.15s ease-in-out;
+    right: -5px;
+    position: relative;
 }
 .btn.large {
     border-top-left-radius: 0;
@@ -200,5 +204,12 @@ form.contact .hidden {
     /* BUTTONS */
     .btn {
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* FEATURE */
+    #feature-text {
+        padding: 0 25px;
     }
 }
