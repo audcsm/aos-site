@@ -1,7 +1,7 @@
 # Advanced Obesity Surgery website remodel
 
-URL for testing: http://advancedobesitysurgery.com/AUDREY/aos-site/index.php  
-URL for official site: http://advancedobesitysurgery.com/  
+URL for new site: http://advancedobesitysurgery.com/AUDREY/aos-site/index.php  
+URL for old site: http://advancedobesitysurgery.com/  
 
 Resources used:  
 Bootstrap - https://getbootstrap.com/  

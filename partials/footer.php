@@ -16,7 +16,7 @@
                                 <a onclick="window.location.href='./start-here.php'" class="nav-heading">Start Here</a>
                             </li>
                             <li class="nav-item">
-                                <a onclick="window.location.href='./under-construction.php'" class="nav-heading">Privacy Policy</a>
+                                <a onclick="window.location.href='./privacy-policy.php'" class="nav-heading">Privacy Policy</a>
                             </li>
                         </ul>
                     </div>
