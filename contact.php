@@ -4,6 +4,7 @@ $PageTitle="Get in Contact";
 
 include_once('./partials/header.php');
 
+// start session
 session_start();
 
 if (isset($_POST['contact-form-submit'])) {
@@ -71,11 +72,13 @@ if (isset($_POST['contact-form-submit'])) {
                                     Previously had bariatric surgery? <span id="surgery-previously">No</span>
                                     <br /> Obesity-related medical problems? <span id="medical-problems">
                                     <?php
+                                    // call conditions variable and show to user
                                     echo $_SESSION["conditions"];
                                     ?>
                                     </span>
                                     <br /> Height <span id="height">
                                     <?php
+                                    // call height variable, convert to feet and inches, show to user
                                     $feet = (int) ($_SESSION["height"] / 12);
                                     $inches = (int) ($_SESSION["height"] % 12);
                                     if ($inches == 0) {
@@ -88,6 +91,7 @@ if (isset($_POST['contact-form-submit'])) {
                                     </span>
                                     <br /> Weight <span id="weight">
                                     <?php
+                                    // call weight variable and show to user
                                     echo $_SESSION["weight"] . " lbs";
                                     ?>
                                     </span>

@@ -4,13 +4,17 @@ $PageTitle="Start Here";
 
 include_once('./partials/header.php');
 
+// create browser session
 session_start();
 
+// get post request variables and copy to session variables
 function saveData() {
     $_SESSION["height"] = $_POST["height"];
     $_SESSION["weight"] = $_POST["weight"];
     $_SESSION["conditions"] = $_POST["conditions"];
 }
+
+// if form is submitted, save data to session and send user to contact form
 if (isset($_POST['noSurgery-form-submit'])){
     saveData();
     header("location: http://advancedobesitysurgery.com/AUDREY/aos-site/contact.php?hsp=0");
